@@ -25,14 +25,14 @@ ingress:
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
   hosts:
-    - host: test.sunly.me
+    - host: hello-lyly.sunly.me
       paths:
         - path: /
           pathType: Prefix
   tls:
     - secretName: reactjs-tls
       hosts:
-        - test.sunly.me
+        - hello-lyly.sunly.me
 resources: {}
 livenessProbe:
   httpGet:
